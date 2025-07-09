@@ -1,0 +1,42 @@
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.pastel-bg {
+  background-color: #f8f9fa;
+}
+.pastel-pink {
+  background-color: #ffd6e0;
+}
+.pastel-blue {
+  background-color: #c5e3f6;
+}
+.pastel-yellow {
+  background-color: #fff1c5;
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffd6e0;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.active-nav::after {
+  width: 100%;
+}
