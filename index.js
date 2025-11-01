@@ -15,7 +15,7 @@ document.addEventListener("click", (e) => {
 });
 
 // Navigation active state
-const navLinks = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll("[data-nav='main']");
 const sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll", () => {
