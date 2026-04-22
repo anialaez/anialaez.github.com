@@ -3,236 +3,287 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="FlexFlow – Caso de Estudio de Marketing Digital por Ana Díaz Aláez" />
-    <title>Ana Díaz Aláez | FlexFlow</title>
-    <script src="../../../index.js" type="module"></script>
-    <link rel="stylesheet" href="../../../index.css" />
-    <link rel="stylesheet" href="../../../tailwind.css" />
+    <meta name="description" content="FlexFlow — Campaña de Paid Media Emocionalmente Inteligente. Caso de estudio por Ana Díaz Aláez." />
+    <title>Ana Díaz Aláez | Caso de Estudio FlexFlow</title>
+    <script src="/index.js" type="module"></script>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/tailwind.css" />
   </head>
   <body class="pastel-bg">
-    <!-- Header -->
+
     <div class="fixed top-4 right-4 z-50">
       <button id="langToggle" class="bg-white px-3 py-1 rounded-full shadow-md flex items-center space-x-2">
         <span>ES</span>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
         </svg>
       </button>
       <div id="langDropdown" class="hidden absolute right-0 mt-2 bg-white rounded-lg shadow-lg">
-        <a href="/cases/flexflow" aria-label="Switch to English" data-lang="en" class="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-t-lg">English</a>
-        <a href="/es/cases/flexflow" aria-label="Cambiar a español" data-lang="es" class="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-b-lg">Español</a>
+        <a href="/cases/flexflow" data-lang="en" class="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-t-lg">English</a>
+        <a href="/es/cases/flexflow" data-lang="es" class="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-b-lg">Español</a>
       </div>
     </div>
 
     <header class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between">
       <div class="flex items-center mb-4 md:mb-0">
         <div class="w-12 h-12 rounded-full bg-gradient-to-r from-pink-300 to-purple-300 flex items-center justify-center text-white font-bold text-xl">AD</div>
-        <a class="ml-3 text-2xl font-bold" href="/">Ana Díaz Aláez</a>
+        <a class="ml-3 text-2xl font-bold" href="/es">Ana Díaz Aláez</a>
       </div>
       <nav class="flex space-x-6">
-        <a href="/es#home" aria-label="Ir a Proyectos" class="nav-link">Proyectos</a>
-        <a href="/es#about" aria-label="Ir a Sobre Mí" class="nav-link">Sobre Mí</a>
-        <a href="/es#contact" aria-label="Ir a Contacto" class="nav-link">Contacto</a>
+        <a href="/es#home" class="nav-link">Proyectos</a>
+        <a href="/es#about" class="nav-link">Sobre Mí</a>
+        <a href="/es#contact" class="nav-link">Contacto</a>
       </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="py-16 bg-gradient-to-b from-white to-blue-50">
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2 mb-8 md:mb-0">
+          <div class="md:w-1/3 mb-8 md:mb-0">
             <h1 class="text-4xl font-bold mb-2">FlexFlow</h1>
             <h2 class="text-4xl font-bold mb-4 text-gray-400">Caso de Estudio</h2>
-            <p class="text-lg text-gray-600">¿Y si el yoga también pudiera adaptarse a tu caos diario?</p>
+            <p class="text-lg text-gray-600">¿Y si el bienestar pudiera adaptarse al caos de tu día a día?</p>
           </div>
-          <div class="md:w-1/2 flex justify-center">
-            <div class="w-full h-64 pastel-blue rounded-2xl flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-32 w-32 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-              </svg>
-            </div>
+          <div class="md:w-2/3 md:pl-12 flex justify-center">
+            <img alt="FlexFlow portada de la campaña" src="/images/flexflow-cover.jpg" class="w-full rounded-xl shadow-md" style="max-height: 400px; object-fit: cover;" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contexto -->
+    <!-- Context & Kick-off -->
     <section class="py-16">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-4">&#128167; Contexto e inicio</h2>
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4">Contexto y Punto de Partida</h2>
         <p class="text-lg text-gray-600 mb-4">
-          FlexFlow nace con una propuesta clara: llevar el yoga y el pilates a la vida real. No se busca un estilo "perfecto", sino alcanzable para personas con agendas apretadas, múltiples responsabilidades y días impredecibles.
+          FlexFlow es una plataforma de bienestar digital que ofrece clases de yoga y pilates en directo y bajo demanda, adaptadas a los estilos de vida modernos. El brief era claro: llegar a las personas que más lo necesitan pero que sienten que el fitness no está hecho para ellas.
         </p>
         <p class="text-lg text-gray-600 mb-6">
-          El objetivo de este proyecto era diseñar una estrategia outbound de lanzamiento para esta nueva plataforma digital ficticia. Fue un proyecto grupal en el que cada integrante aportó su visión, y donde mi papel fue clave en el desarrollo de la investigación, segmentación, estructura estratégica, planificación de campañas y storytelling emocional.
+          El objetivo era conseguir 100 registros de prueba gratuita y 1.200 visitas al sitio web en 30 días, con un presupuesto de 3.000 € dividido entre Google Ads y colaboraciones con influencers en Instagram. Fue un proyecto de bootcamp en Ironhack, pero lo tratamos como un brief real desde el principio.
         </p>
       </div>
     </section>
 
-    <!-- Audiencia -->
+    <!-- Strategy -->
     <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128221; Fundamentos de la campaña</h2>
-        <p class="text-lg text-gray-600 mb-6">Nuestra investigación nos llevó a definir tres buyer personas con nombre y rostro emocional:</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          <div class="rounded-xl p-6 pastel-blue">
-            <h3 class="text-xl font-bold mb-2">Sophie</h3>
-            <p class="text-sm text-gray-500 mb-2 italic">Madre abrumada</p>
-            <p class="text-gray-700">Que apenas tiene una hora al día para sí misma. Necesita tiempo para sí misma sin sentirse culpable por tomarlo.</p>
-          </div>
-          <div class="rounded-xl p-6 pastel-yellow">
-            <h3 class="text-xl font-bold mb-2">David</h3>
-            <p class="text-sm text-gray-500 mb-2 italic">Profesional agotado</p>
-            <p class="text-gray-700">Con poco tiempo y mucho estrés acumulado. Dolor físico y mental que busca una solución rápida pero real.</p>
-          </div>
-          <div class="rounded-xl p-6 pastel-pink">
-            <h3 class="text-xl font-bold mb-2">Sara</h3>
-            <p class="text-sm text-gray-500 mb-2 italic">Principiante ansiosa</p>
-            <p class="text-gray-700">Que quiere empezar pero siente que no encaja en un estudio. Necesita un espacio sin presiones estéticas.</p>
-          </div>
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">La Estrategia</h2>
+        <p class="text-lg text-gray-600 mb-4">
+          La mayoría de plataformas de bienestar hablan a todo el mundo de la misma manera. La campaña de FlexFlow se construyó sobre la idea contraria: tres personas muy distintas, con tres razones muy diferentes para empezar con el yoga, cada una recibiendo mensajes que hablaban directamente a su realidad emocional.
+        </p>
+        <p class="text-lg text-gray-600 mb-4">La estrategia se articuló en tres pilares:</p>
+        <ol class="mb-6 space-y-4 px-6" style="list-style: upper-roman">
+          <li class="text-lg text-gray-600"><b>Storytelling por persona</b>: Cada persona tenía su propia combinación de canales, copy, keywords y punto de entrada al funnel.</li>
+          <li class="text-lg text-gray-600"><b>Funnel no lineal</b>: Sara convirtió desde Reels emocionales de TOFU; Sophie pasó de descubrimiento a conversión casi de inmediato; David empezó a mitad del funnel con alta intención de búsqueda.</li>
+          <li class="text-lg text-gray-600"><b>Sinergia de canales</b>: Instagram contaba la historia. Google cerraba la venta. Cada canal tenía un rol definido — no era el mismo mensaje copy-paste en todas partes.</li>
+        </ol>
+        <div class="flex justify-center mb-6 p-4 bg-gray-50 rounded-xl">
+          <img alt="Visión general de la estrategia de campaña y mix de canales" src="/images/flexflow/slide05_img10.png" class="w-full" style="max-height: 420px; object-fit: contain;" />
         </div>
-
-        <p class="text-lg text-gray-600">Nuestra propuesta de valor giró en torno a una idea poderosa: <b>el bienestar también puede adaptarse a ti</b>. Sin horarios estrictos. Sin exigencias estéticas. Solo un espacio digital que no juzga, sino que acoge.</p>
       </div>
     </section>
 
-    <!-- Estrategia de contenido -->
+    <!-- Personas -->
     <section class="py-16">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#127919; Estrategia de contenido</h2>
-        <p class="text-lg text-gray-600 mb-4">No construimos un simple embudo, sino un <b>sistema de confianza</b>. Para FlexFlow, el funnel no era lineal: los usuarios podían llegar por Google, un reel de Instagram o una recomendación. Cada punto de entrada debía ser una bienvenida cálida, no una ruta prediseñada.</p>
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Las Tres Personas</h2>
+        <p class="text-lg text-gray-600 mb-10">Cada persona determinaba una combinación diferente de canales, copy, keywords y punto de entrada al funnel.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+          <div class="bg-white rounded-xl p-6 shadow-sm border-t-4 border-blue-300">
+            <h3 class="text-xl font-bold mb-1">Sara</h3>
+            <p class="text-blue-500 text-sm font-medium mb-3">La Principiante con Ansiedad</p>
+            <p class="text-gray-600 text-sm mb-3">Intimidada por los espacios fitness. Necesita seguridad emocional y cero presión para empezar.</p>
+            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Keywords</p>
+            <p class="text-sm text-gray-700 mb-3">yoga para principiantes en casa · yoga suave · yoga para personas poco flexibles</p>
+            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Mensaje del anuncio</p>
+            <p class="text-sm text-blue-600 italic">"Yoga sin presión. Paso a paso. Pruébalo gratis."</p>
+            <p class="text-xs text-gray-400 mt-3">Entra por Reels emocionales de TOFU</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm border-t-4 border-pink-300">
+            <h3 class="text-xl font-bold mb-1">Sophie</h3>
+            <p class="text-pink-500 text-sm font-medium mb-3">La Madre Agotada</p>
+            <p class="text-gray-600 text-sm mb-3">Se siente invisible en los espacios de fitness tradicionales. Busca calma y estructura en una rutina caótica.</p>
+            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Keywords</p>
+            <p class="text-sm text-gray-700 mb-3">yoga tranquilo para madres · yoga antes de dormir · yoga para el estrés</p>
+            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Mensaje del anuncio</p>
+            <p class="text-sm text-pink-600 italic">"Yoga tranquilo para mamás ocupadas — 7 días gratis."</p>
+            <p class="text-xs text-gray-400 mt-3">De descubrimiento a conversión casi de inmediato</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm border-t-4 border-purple-300">
+            <h3 class="text-xl font-bold mb-1">David</h3>
+            <p class="text-purple-500 text-sm font-medium mb-3">El Profesional Quemado</p>
+            <p class="text-gray-600 text-sm mb-3">Sin tiempo, con dolor de espalda crónico. Quiere alivio rápido y práctico — no inspiración.</p>
+            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Keywords</p>
+            <p class="text-sm text-gray-700 mb-3">yoga para el dolor de espalda · yoga 10 minutos · estiramientos para oficina</p>
+            <p class="text-xs text-gray-500 font-semibold uppercase mb-1">Mensaje del anuncio</p>
+            <p class="text-sm text-purple-600 italic">"¿Dolor de espalda? ¿Agotamiento? Resetea en 10 minutos."</p>
+            <p class="text-xs text-gray-400 mt-3">Empieza a mitad del funnel con alta intención de búsqueda</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-white rounded-xl">
+          <img alt="Resumen de personas" src="/images/flexflow/slide03_img00.png" class="w-full rounded-lg" style="max-height: 220px; object-fit: contain;" />
+          <img alt="Recorrido del funnel no lineal" src="/images/flexflow/slide04_img00.png" class="w-full rounded-lg" style="max-height: 220px; object-fit: contain;" />
+          <img alt="Mix de canales y KPIs" src="/images/flexflow/slide02_img00.png" class="w-full rounded-lg" style="max-height: 220px; object-fit: contain;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tracking & Setup -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Configuración Técnica y Seguimiento</h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Cada punto de contacto estaba conectado y era medible desde el primer día. GTM, GA4, HubSpot y parámetros UTM se configuraron antes de publicar el primer anuncio — la atribución estaba integrada en la estructura, no añadida como parche después.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="flex justify-center p-4 bg-gray-50 rounded-xl">
+            <img alt="Conexiones de GTM y tracking" src="/images/flexflow/slide07_img03.png" class="w-full" style="max-height: 320px; object-fit: contain;" />
+          </div>
+          <div class="flex justify-center p-4 bg-gray-50 rounded-xl">
+            <img alt="Configuración programática" src="/images/flexflow/slide06_img00.png" class="w-full" style="max-height: 320px; object-fit: contain;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Landing Pages -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Landing Pages y Wireframes</h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Cada persona tenía una experiencia de landing page dedicada — copy, visuales y CTA adaptados a su motivación específica y etapa del funnel. La landing page final fue diseñada para una experiencia de usuario calmada y guiada, con un CTA de prueba gratuita muy claro.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6 p-4 bg-white rounded-xl">
+          <img alt="Wireframe de blog, Instagram y landing" src="/images/flexflow/slide08_img03.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+          <img alt="Detalle del wireframe de landing" src="/images/flexflow/slide08_img04.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+          <img alt="Contenido de la landing page" src="/images/flexflow/slide08_img06.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+          <img alt="Visual de la landing page" src="/images/flexflow/slide08_img07.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+          <img alt="Sección de la landing page" src="/images/flexflow/slide08_img09.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+          <img alt="Footer de la landing page" src="/images/flexflow/slide08_img10.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-white rounded-xl">
+          <img alt="Landing final vista 1" src="/images/flexflow/slide09_img01.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+          <img alt="Landing final vista 2" src="/images/flexflow/slide09_img02.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+          <img alt="Landing final vista 3" src="/images/flexflow/slide09_img03.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+          <img alt="Landing final vista 4" src="/images/flexflow/slide09_img04.png" class="w-full rounded" style="max-height: 200px; object-fit: contain;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Campaigns -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Campañas Publicitarias</h2>
+
+        <h3 class="text-xl font-bold mb-4">Google Ads</h3>
+        <p class="text-lg text-gray-600 mb-4">
+          Campañas de Search, Brand y Remarketing construidas alrededor de keywords de alta intención para cada persona. El copy de los anuncios fue escrito para coincidir con el estado emocional del buscador — no solo con la consulta.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 p-4 bg-gray-50 rounded-xl">
+          <img alt="Estructura de campaña Google Ads" src="/images/flexflow/slide12_img01.png" class="w-full" style="max-height: 320px; object-fit: contain;" />
+          <div class="grid grid-rows-3 gap-4">
+            <img alt="Variante Google Ads - Madres" src="/images/flexflow/slide13_img01.png" class="w-full" style="max-height: 100px; object-fit: contain;" />
+            <img alt="Variante Google Ads - Profesionales" src="/images/flexflow/slide13_img05.png" class="w-full" style="max-height: 100px; object-fit: contain;" />
+            <img alt="Variante Google Ads - Principiantes" src="/images/flexflow/slide13_img06.png" class="w-full" style="max-height: 100px; object-fit: contain;" />
+          </div>
+        </div>
+
+        <h3 class="text-xl font-bold mb-4">Anuncios de YouTube</h3>
+        <p class="text-lg text-gray-600 mb-4">
+          Anuncios de video cortos adaptados a cada persona — tono aspiracional para David, calma de hora de siesta para Sophie, seguridad sin presión para Sara.
+        </p>
+        <div class="flex justify-center mb-8 p-4 bg-gray-50 rounded-xl">
+          <img alt="Variantes de anuncio YouTube por persona" src="/images/flexflow/slide14_img04.png" class="w-full" style="max-height: 340px; object-fit: contain;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Media Plan & Budget -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Plan de Medios y Presupuesto</h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Presupuesto mensual total: 3.000 € divididos entre Google Ads, colaboraciones con influencers en Instagram y retargeting en Google Display. Cada euro se rastreó contra una persona específica y una etapa del funnel.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="flex justify-center p-4 bg-white rounded-xl shadow-sm">
+            <img alt="Cronograma del plan de medios" src="/images/flexflow/slide10_img22.png" class="w-full" style="max-height: 320px; object-fit: contain;" />
+          </div>
+          <div class="flex justify-center p-4 bg-white rounded-xl shadow-sm">
+            <img alt="Asignación de presupuesto y rendimiento" src="/images/flexflow/slide11_img00.png" class="w-full" style="max-height: 320px; object-fit: contain;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Looker Dashboard -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Dashboard de Rendimiento</h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Todos los datos de campaña se visualizaron en un dashboard de Looker Studio conectado a GA4 y Google Ads. El dashboard rastreaba el rendimiento por persona, canal y etapa del funnel en tiempo real.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 bg-gray-50 rounded-xl">
+          <img alt="Dashboard de Looker Studio" src="/images/flexflow/slide15_img00.png" class="w-full" style="max-height: 320px; object-fit: contain;" />
+          <img alt="Plantilla de seguimiento de campaña" src="/images/flexflow/slide16_img01.png" class="w-full" style="max-height: 320px; object-fit: contain;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Expected Results -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Resultados Esperados</h2>
+        <p class="text-lg text-gray-600 mb-8">
+          Resultados proyectados basados en benchmarks del sector y la estructura de campaña definida. Tratados como objetivos reales, no como estimaciones.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+            <p class="text-3xl font-bold text-blue-500 mb-2">350&ndash;450</p>
+            <p class="text-sm text-gray-600">Leads mensuales</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+            <p class="text-3xl font-bold text-blue-500 mb-2">60&ndash;80</p>
+            <p class="text-sm text-gray-600">Registros de prueba</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+            <p class="text-3xl font-bold text-blue-500 mb-2">~2,5x</p>
+            <p class="text-sm text-gray-600">ROAS proyectado</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+            <p class="text-3xl font-bold text-blue-500 mb-2">&le;30&euro;</p>
+            <p class="text-sm text-gray-600">CPA objetivo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Learnings -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Aprendizajes Clave</h2>
+        <p class="text-lg text-gray-600 mb-4">Este proyecto me enseñó que el canal rara vez es el problema — el problema suele estar en el brief. Cuando entiendes a quién le hablas a nivel emocional, los mensajes, el formato y el funnel casi se escriben solos.</p>
         <ul class="mb-6 space-y-4 px-6" style="list-style: disc">
-          <li class="text-lg text-gray-600"><b>Blogs SEO</b> escritos con Gamma — títulos como "How to Start Yoga at Home (Even if You're Super Busy)" y "3 Mindful Rituals When You Feel Overwhelmed".</li>
-          <li class="text-lg text-gray-600"><b>Lead magnets</b> como el "Free Anti-Burnout Toolkit", desbloqueado solo al reservar el periodo de prueba gratuita.</li>
-          <li class="text-lg text-gray-600"><b>Posts en redes sociales</b> con frases como "You don't need a studio to feel strong" y vídeos de IA con Hedra mostrando cuerpos diversos y espacios caseros.</li>
-          <li class="text-lg text-gray-600"><b>Anuncios de vídeo en YouTube</b> creados con InvideoAI — pequeñas piezas narrativas de 30 segundos que decían "te vemos".</li>
-          <li class="text-lg text-gray-600"><b>Plan editorial de Instagram</b> con 4–5 publicaciones semanales: 40% educativo, 30% autocuidado emocional, 20% producto, 10% testimonios/UGC.</li>
-          <li class="text-lg text-gray-600"><b>Secuencia de emails 7-Day Nurturing</b> adaptada por perfil para acompañar al usuario desde el primer clic.</li>
+          <li class="text-lg text-gray-600">Diseñar para un funnel no lineal te obliga a pensar desde la perspectiva del cliente, no desde la estructura de la campaña</li>
+          <li class="text-lg text-gray-600">La resonancia emocional en el copy de los anuncios supera a las tácticas de urgencia — especialmente en bienestar</li>
+          <li class="text-lg text-gray-600">La sinergia de canales solo funciona cuando cada canal tiene un rol claro y diferenciado</li>
+          <li class="text-lg text-gray-600">Configurar el tracking antes del lanzamiento — no después — cambia la calidad de cada decisión de optimización</li>
         </ul>
       </div>
     </section>
 
-    <!-- Campañas -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128640; Puesta en marcha</h2>
-
-        <div class="mb-8">
-          <h3 class="text-xl font-bold mb-4">Google Ads y YouTube</h3>
-          <p class="text-lg text-gray-600 mb-4">Desarrollamos una campaña pagada integral con tres grupos de anuncios por buyer persona. Los copies estaban escritos desde la empatía:</p>
-          <ul class="mb-4 space-y-2 px-6" style="list-style: disc">
-            <li class="text-gray-700 text-lg">Sophie: <em>"Try free for 7 days – Quiet yoga made for busy moms"</em></li>
-            <li class="text-gray-700 text-lg">David: <em>"Back pain? Burnout? Reset in 10 min. Start your free trial now"</em></li>
-            <li class="text-gray-700 text-lg">Sara: <em>"New to yoga? Zero pressure, step-by-step guidance. Try it free"</em></li>
-          </ul>
-          <p class="text-lg text-gray-600">Complementamos con campañas de Display (retargeting) y vídeos de IA en YouTube que también creé y edité personalmente. Todo el seguimiento se conectó desde HubSpot con GTM y GA4, con UTM tracking y dashboard en Looker Studio.</p>
-        </div>
-
-        <div class="mb-8">
-          <h3 class="text-xl font-bold mb-4">Influencers y colaboraciones</h3>
-          <p class="text-lg text-gray-600 mb-4">Diseñamos un plan de colaboración con 6–10 microinfluencers (2K–15K seguidores) especializados en bienestar, maternidad o fisioterapia. Modelo de compensación ético y medible:</p>
-          <ul class="mb-4 space-y-2 px-6" style="list-style: disc">
-            <li class="text-gray-600 text-lg">€5–10 por lead cualificado</li>
-            <li class="text-gray-600 text-lg">Bonus de €50 si superaban las 10 conversiones</li>
-            <li class="text-gray-600 text-lg">Enlace afiliado personalizado</li>
-          </ul>
-          <p class="text-lg text-gray-600">Alcance estimado: 200.000 usuarios, con 100–150 leads generados solo desde este canal.</p>
-        </div>
-
-        <div class="mb-8">
-          <h3 class="text-xl font-bold mb-4">Landing page y lead magnet</h3>
-          <p class="text-lg text-gray-600">Todo el ecosistema de captación estaba centrado en la landing page construida en HubSpot, con formularios conectados, sección de FAQs, política de privacidad accesible, el "Free Anti-Burnout Toolkit" y estructura BOFU con testimonios y CTA visible.</p>
-        </div>
-
-        <div class="mb-8">
-          <h3 class="text-xl font-bold mb-4">Automatización personalizada <span class="text-sm font-normal text-gray-500">(aporte individual)</span></h3>
-          <p class="text-lg text-gray-600">Después de presentar el proyecto en equipo, diseñé por mi cuenta un sistema de automatización con Make que detectaba automáticamente el tipo de usuario (Sophie, David o Sara), añadía etiquetas en el CRM y activaba una ruta personalizada de emails, integrando HubSpot con GeminiAI y Outlook a través de Make.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resultados esperados -->
-    <section class="py-16">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128202; Resultados esperados</h2>
-        <p class="text-lg text-gray-600 mb-4">Proyectados para un período de 30 días con un presupuesto de €3.000, basándonos en benchmarks del sector wellness digital:</p>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-          <div class="bg-blue-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-blue-600">100</p>
-            <p class="text-sm text-gray-600 mt-1">Suscripciones de prueba gratuita</p>
-          </div>
-          <div class="bg-blue-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-blue-600">1.200</p>
-            <p class="text-sm text-gray-600 mt-1">Visitas cualificadas a la landing</p>
-          </div>
-          <div class="bg-blue-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-blue-600">6%</p>
-            <p class="text-sm text-gray-600 mt-1">CTR medio (vs. 3–4% en el mercado)</p>
-          </div>
-          <div class="bg-blue-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-blue-600">€0,60</p>
-            <p class="text-sm text-gray-600 mt-1">CPC en Search Ads</p>
-          </div>
-          <div class="bg-blue-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-blue-600">€0,20</p>
-            <p class="text-sm text-gray-600 mt-1">CPC en Display Ads</p>
-          </div>
-          <div class="bg-blue-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-blue-600">2,5x</p>
-            <p class="text-sm text-gray-600 mt-1">ROAS estimado</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Aprendizajes -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#129504; Aprendizajes clave</h2>
-        <p class="text-lg text-gray-600 mb-4">Este proyecto me permitió construir una campaña outbound desde cero, combinando sensibilidad, estructura y enfoque estratégico. Aprendí que una buena segmentación no se limita a los datos demográficos: requiere empatía y la capacidad de transformar emociones en mensajes concretos.</p>
-        <p class="text-lg text-gray-600 mb-4">Uno de los descubrimientos más valiosos fue comprender que el funnel no siempre es lineal. Por eso aprendí a diseñar un ecosistema donde cada pieza — desde un Reel o un anuncio hasta una automatización — pudiera acoger a la audiencia en cualquier punto de su proceso.</p>
-        <p class="text-lg text-gray-600">La automatización en Make me enseñó cómo escalar la personalización sin perder cercanía, integrando tecnología de forma natural dentro del recorrido del usuario. Cuando entiendes a quién te diriges, la comunicación tiene un propósito.</p>
-      </div>
-    </section>
-
-    <!-- Herramientas -->
-    <section class="py-16">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128736; Herramientas utilizadas</h2>
-        <div class="flex flex-wrap gap-3">
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Google Ads</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">GA4</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">GTM</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Looker Studio</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Meta Ads</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">HubSpot</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Make</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Gamma</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Hedra</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">InvideoAI</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Semrush</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">UX Pilot</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">ChatGPT</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">GeminiAI</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Ideogram</span>
-          <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Excel</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="mb-4 md:mb-0">
             <h3 class="text-xl font-bold">Ana Díaz Aláez</h3>
-            <p class="text-gray-400">Profesional de Marketing Basado en Datos</p>
+            <p class="text-gray-400">Especialista en Marketing Digital Basado en Datos</p>
           </div>
+          <a href="/es#home" class="text-gray-400 hover:text-white text-sm">&larr; Volver a proyectos</a>
         </div>
         <div class="mt-8 pt-6 border-t border-gray-700 text-center text-gray-400">
-          <p>© 2025 Ana Díaz Aláez. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Ana Díaz Aláez. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
