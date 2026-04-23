@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="FlexFlow – Digital Marketing Case Study by Ana Díaz Aláez" />
     <title>Ana Díaz Aláez | FlexFlow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-      body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f8f7f5; color: #1a1a1a; }
+      body { font-family: 'Montserrat', sans-serif; background: #f8f7f5; color: #1a1a1a; }
       .pastel-blue { background: #dbeafe; }
       .pastel-yellow { background: #fef9c3; }
       .pastel-pink { background: #fce7f3; }
@@ -16,19 +17,16 @@
       img { max-width: 100%; height: auto; display: block; }
       ul { padding-left: 1.5rem; }
       ul li { line-height: 1.7; }
-
       header { border-bottom: 1px solid #f0eeeb; background: #f8f7f5; }
       .nav-link { text-decoration: none; color: #374151; font-size: 0.9rem; transition: color 0.2s; }
       .nav-link:hover { color: #3b82f6; }
-
       section { padding: 4rem 0; }
       section.alt { background: #fff; }
-
       h2 { font-size: 2.1rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.15; }
       h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; }
+      h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: #374151; }
       p { font-size: 1.05rem; line-height: 1.75; color: #4b5563; margin-bottom: 1rem; }
       p:last-child { margin-bottom: 0; }
-
       .hero { background: linear-gradient(to bottom, #ffffff, #eff6ff); padding: 4rem 0; }
       .hero-inner { display: flex; align-items: center; gap: 3rem; flex-wrap: wrap; }
       .hero-text { flex: 1; min-width: 280px; }
@@ -37,54 +35,42 @@
       .hero-text p { font-size: 1.1rem; color: #4b5563; }
       .hero-img { flex: 1; min-width: 280px; }
       .hero-img img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-
       .personas { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
       .persona-card { border-radius: 0.75rem; padding: 1.5rem; }
       .persona-card h3 { margin-bottom: 0.25rem; }
       .persona-card .role { font-size: 0.875rem; color: #6b7280; font-style: italic; margin-bottom: 0.75rem; }
       .persona-card p { font-size: 0.95rem; color: #374151; margin: 0; }
-
       .img-full { width: 100%; border-radius: 0.75rem; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
       .img-box { background: #f3f4f6; border-radius: 0.75rem; padding: 1rem; margin-top: 1.5rem; }
       .img-box img { width: 100%; border-radius: 0.5rem; max-height: 420px; object-fit: contain; }
-
       .img-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
       .img-grid-2 img { width: 100%; border-radius: 0.5rem; max-height: 320px; object-fit: contain; background: #f3f4f6; }
-
       .img-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-top: 1.5rem; }
       .img-grid-3 img { width: 100%; border-radius: 0.5rem; max-height: 200px; object-fit: contain; background: #f3f4f6; }
-
       .img-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-top: 1rem; }
       .img-grid-4 img { width: 100%; border-radius: 0.5rem; max-height: 200px; object-fit: contain; background: #f3f4f6; }
-
       .ads-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; background: #f9fafb; border-radius: 0.75rem; padding: 1rem; }
       .ads-copies { display: flex; flex-direction: column; gap: 0.75rem; }
       .ads-copies img { width: 100%; border-radius: 0.375rem; max-height: 100px; object-fit: contain; background: #f3f4f6; }
       .ads-main img { width: 100%; border-radius: 0.375rem; max-height: 320px; object-fit: contain; background: #f3f4f6; }
-
       .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
       .stat-card { background: #eff6ff; border-radius: 0.75rem; padding: 1.25rem; text-align: center; }
       .stat-card .num { font-size: 1.875rem; font-weight: 700; color: #2563eb; }
       .stat-card .label { font-size: 0.8rem; color: #4b5563; margin-top: 0.25rem; }
-
       .tools { display: flex; flex-wrap: wrap; gap: 0.75rem; }
       .tool-tag { padding: 0.5rem 1rem; background: #dbeafe; color: #1d4ed8; border-radius: 9999px; font-size: 0.875rem; font-weight: 500; }
-
       .lang-toggle { position: fixed; top: 1rem; right: 1rem; z-index: 50; }
       .lang-btn { background: #fff; padding: 0.25rem 0.75rem; border-radius: 9999px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); display: flex; align-items: center; gap: 0.5rem; cursor: pointer; border: none; font-size: 0.9rem; }
       .lang-dropdown { display: none; position: absolute; right: 0; margin-top: 0.5rem; background: #fff; border-radius: 0.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.1); min-width: 120px; }
       .lang-dropdown a { display: block; padding: 0.5rem 1rem; font-size: 0.875rem; color: #374151; }
       .lang-dropdown a:hover { background: #f3f4f6; }
-
       footer { background: #1f2937; color: #fff; padding: 2.5rem 0; }
       footer p { color: #9ca3af; margin: 0; font-size: 0.9rem; }
       .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
       .footer-bottom { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #374151; text-align: center; }
-
       .mb-8 { margin-bottom: 2rem; }
       .mt-4 { margin-top: 1rem; }
       strong { color: #1a1a1a; }
-
       @media (max-width: 640px) {
         .stats-grid { grid-template-columns: repeat(2, 1fr); }
         .img-grid-2 { grid-template-columns: 1fr; }
@@ -95,7 +81,6 @@
     </style>
   </head>
   <body>
-
     <div class="lang-toggle">
       <button class="lang-btn" onclick="document.querySelector('.lang-dropdown').style.display = document.querySelector('.lang-dropdown').style.display === 'block' ? 'none' : 'block'">
         <span>EN</span>
@@ -108,7 +93,6 @@
         <a href="/es/cases/flexflow">Español</a>
       </div>
     </div>
-
     <header>
       <div class="container" style="padding: 1.5rem 1.5rem; display:flex; align-items:center; justify-content:space-between;">
         <div style="display:flex; align-items:center; gap:0.75rem;">
@@ -129,11 +113,10 @@
         <div class="hero-inner">
           <div class="hero-text">
             <h1>FlexFlow</h1>
-            <h2>Case Study</h2>
             <p>What if wellness could adapt to your daily chaos?</p>
           </div>
           <div class="hero-img">
-            <img src="/images/flexflow-cover.jpeg" alt="FlexFlow campaign cover" />
+            <img src="/images/flexflow/flexflow-cover.jpeg" alt="FlexFlow campaign cover" />
           </div>
         </div>
       </div>
@@ -142,7 +125,7 @@
     <!-- Context -->
     <section>
       <div class="container" style="padding: 0 1.5rem;">
-        <h2>💧 Context &amp; Kick-off</h2>
+        <h2>Context &amp; Kick-off</h2>
         <p>FlexFlow was created with a clear mission: to bring yoga and pilates into everyday lives. Not a polished, idealised version — one that feels possible for people with tight schedules, endless responsibilities, and chaotic days.</p>
         <p>This project aimed to craft a full-funnel outbound strategy to launch this fictional digital platform in a way that felt grounded, human, and emotionally resonant. As a group project, each team member brought their own strengths. My contribution focused on leading the research, defining the audience segmentation, building the strategic structure, mapping the campaign logic, and shaping an emotionally engaging narrative that could truly speak to people who feel disconnected from traditional wellness spaces.</p>
       </div>
@@ -151,10 +134,9 @@
     <!-- Audience -->
     <section class="alt">
       <div class="container" style="padding: 0 1.5rem;">
-        <h2>📝 Who We Designed For</h2>
+        <h2>📝 Who we designed for?</h2>
         <p>Our research began with a fundamental question: <em>Who are we really trying to reach, and what's keeping them from showing up for themselves?</em></p>
         <p>Through competitor analysis, keyword exploration, and empathetic listening, we identified three distinct audience segments and built detailed buyer personas for each:</p>
-
         <div class="personas">
           <div class="persona-card pastel-blue">
             <h3>Sophie</h3>
@@ -172,22 +154,16 @@
             <p>Intimidated by polished studios and rigid routines. Needs a safe, pressure-free way to start — without aesthetic expectations.</p>
           </div>
         </div>
-
         <p>Our value proposition was built on a more grounded and powerful promise: <strong>wellness can adapt to you</strong>. No strict schedules. No aesthetic expectations. Just space to breathe, stretch, and reconnect — in your own way, on your own time.</p>
-
-        <!-- Persona slides -->
         <div class="img-grid-3" style="margin-top:2rem;">
-          <img src="/images/image3.png" alt="Persona overview" />
-          <img src="/images/image4.png" alt="Funnel journey" />
-          <img src="/images/image5.png" alt="Channel mix and KPIs" />
         </div>
       </div>
     </section>
 
-    <!-- Content Strategy -->
+    <!-- Content strategy -->
     <section>
       <div class="container" style="padding: 0 1.5rem;">
-        <h2>🎯 Content Strategy: Building Trust, Not Just Funnels</h2>
+        <h2>🎯 Content strategy: building trust, not just funnels</h2>
         <p>We didn't build a traditional funnel — we built a <strong>trust ecosystem</strong>. For FlexFlow, the path to conversion wasn't linear: users could discover us through a Google search, an Instagram reel, or a local influencer's story. Each entry point had to feel like a warm invitation, not a hard sell.</p>
         <p>Key content assets included:</p>
         <ul class="mb-8" style="list-style: disc; color:#4b5563; font-size:1.05rem;">
@@ -199,20 +175,18 @@
           <li><strong>7-day nurturing email sequence</strong> tailored by persona, guiding users gently through their trial experience.</li>
         </ul>
         <p>Cross-channel examples: A Google Search ad for "gentle yoga for moms" linked to a postnatal pilates blog with a CTA to book a free class. An Instagram reel about "desk yoga in under 1 minute" directed users to the free trial landing. Day 3 of the trial included a personalised email featuring Sophie's story and a link to the Anti-Burnout Toolkit.</p>
-
-        <!-- Strategy image -->
         <div class="img-box">
-          <img src="/images/image6.png" alt="Campaign strategy and channel mix overview" />
+          <img src="/images/flexflow/slide05_img10.png" alt="Campaign strategy and channel mix overview" />
         </div>
       </div>
     </section>
 
-    <!-- Campaign Activation -->
+    <!-- Campaign activation -->
     <section class="alt">
       <div class="container" style="padding: 0 1.5rem;">
-        <h2>🚀 Campaign Activation</h2>
+        <h2>🚀 Campaign activation</h2>
 
-        <!-- Google Ads -->
+        <!-- Google Ads & YouTube -->
         <div class="mb-8">
           <h3>Google Ads &amp; YouTube</h3>
           <p>We launched a structured outbound campaign built around search intent, divided into three ad groups by persona. Keywords included "yoga at home," "postnatal pilates," and "quick wellness workouts." All copy was written with empathy:</p>
@@ -223,14 +197,19 @@
           </ul>
           <p>We complemented with Google Display retargeting campaigns and YouTube AI videos — authentic 30-second pieces that reflected real-life situations for each persona. All tracking was connected from HubSpot via GTM and GA4, with UTM tracking to monitor conversions by channel and audience, visualised in a Looker Studio dashboard.</p>
 
+          <h4 style="margin-top:1.5rem;">Google Ads</h4>
+          <div class="img-box" style="margin-top:0.5rem;">
+            <img src="/images/flexflow/slide11_img02.png" alt="Google Ads variations by persona" />
+          </div>
+
           <div class="ads-grid">
             <div class="ads-main">
-              <img src="/images/image7.png" alt="Google Ads campaign structure" />
+              <img src="/images/flexflow/slide12_img01.png" alt="Google Ads campaign structure" />
             </div>
             <div class="ads-copies">
-              <img src="/images/image8.png" alt="Ad copy — Sophie" />
-              <img src="/images/image9.png" alt="Ad copy — David" />
-              <img src="/images/image10.png" alt="Ad copy — Sara" />
+              <img src="/images/flexflow/slide13_img01.png" alt="Ad copy — Sophie" />
+              <img src="/images/flexflow/slide13_img05.png" alt="Ad copy — David" />
+              <img src="/images/flexflow/slide13_img06.png" alt="Ad copy — Sara" />
             </div>
           </div>
         </div>
@@ -239,7 +218,17 @@
         <div class="mb-8">
           <h3>YouTube Ads</h3>
           <div class="img-box" style="margin-top:0;">
-            <img src="/images/image11.png" alt="YouTube ad variations by persona" />
+            <img src="/images/flexflow/slide14_img04.png" alt="YouTube ad variations by persona" />
+          </div>
+        </div>
+
+        <!-- Technical Setup & Tracking -->
+        <div class="mb-8">
+          <h3>Technical Setup &amp; Tracking</h3>
+          <p>All tracking was connected from HubSpot via GTM and GA4 before the first ad went live — attribution built into the structure from day one.</p>
+          <div class="img-grid-2">
+            <img src="/images/flexflow/slide07_img03.png" alt="GTM and tracking connections" />
+            <img src="/images/flexflow/slide06_img00.png" alt="Programmatic setup" />
           </div>
         </div>
 
@@ -260,6 +249,18 @@
           <h3>Landing Page &amp; Lead Magnet</h3>
           <p>The entire acquisition journey centred around a visually aligned landing page built in HubSpot, featuring an FAQ section, transparent privacy policy, the exclusive "Free Anti-Burnout Toolkit" gated behind trial signup, testimonials, and a strong CTA.</p>
           <p>This page was connected to blog articles I wrote, such as "3 Mindful Rituals When You Feel Overwhelmed" and "How to Start Yoga at Home (Even if You're Super Busy)."</p>
+
+          <h4 style="margin-top:1.5rem;">Blog</h4>
+          <div class="img-grid-2">
+            <img src="/images/flexflow/slide08_img04.png" alt="Blog article — Mindful Rituals" />
+            <img src="/images/flexflow/slide08_img03.png" alt="Blog article — Yoga at Home" />
+          </div>
+
+          <h4 style="margin-top:1.5rem;">Landing page</h4>
+          <div class="img-grid-2">
+            <img src="/images/flexflow/slide09_img01.png" alt="Landing page — final view 1" />
+            <img src="/images/flexflow/slide09_img02.png" alt="Landing page — final view 2" />
+          </div>
         </div>
 
         <!-- Automation -->
@@ -283,6 +284,10 @@
           <li>Conversion journey: from free trial sign-up to active paid subscription</li>
         </ul>
         <p>Tools used: <strong>Google Ads, GA4, GTM, Looker Studio, Meta Ads, HubSpot, Excel</strong>. All data centralised in a Looker Studio dashboard for real-time visibility.</p>
+        <div class="img-grid-2" style="margin-top:1.5rem;">
+          <img src="/images/flexflow/slide10_img22.png" alt="Campaign tracking overview" />
+          <img src="/images/flexflow/slide15_img00.png" alt="Looker Studio dashboard" />
+        </div>
       </div>
     </section>
 
@@ -370,6 +375,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
