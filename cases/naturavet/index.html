@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../../tailwind.css" />
   </head>
   <body class="pastel-bg">
-    <!-- Header -->
+
+    <!-- Language toggle -->
     <div class="fixed top-4 right-4 z-50">
       <button id="langToggle" class="bg-white px-3 py-1 rounded-full shadow-md flex items-center space-x-2">
         <span>EN</span>
@@ -24,6 +25,7 @@
       </div>
     </div>
 
+    <!-- Header -->
     <header class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between">
       <div class="flex items-center mb-4 md:mb-0">
         <div class="w-12 h-12 rounded-full bg-gradient-to-r from-pink-300 to-purple-300 flex items-center justify-center text-white font-bold text-xl">AD</div>
@@ -37,20 +39,21 @@
     </header>
 
     <!-- Hero -->
-    <section class="py-16 bg-gradient-to-b from-white to-yellow-50">
+    <section class="py-16 bg-gradient-to-b from-white to-green-50">
       <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row items-center">
+        <div class="flex flex-col md:flex-row items-center gap-10">
           <div class="md:w-1/2 mb-8 md:mb-0">
             <h1 class="text-4xl font-bold mb-2">NaturaVet</h1>
             <h2 class="text-4xl font-bold mb-4 text-gray-400">Case Study</h2>
             <p class="text-lg text-gray-600">Where trust begins: an inbound journey for pet care in Amsterdam.</p>
           </div>
-          <div class="md:w-1/2 flex justify-center">
-            <div class="w-full h-64 pastel-yellow rounded-2xl flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-32 w-32 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-              </svg>
-            </div>
+          <div class="md:w-1/2">
+            <img
+              src="/images/naturavet/naturavet-cover.jpg"
+              alt="NaturaVet campaign cover"
+              class="w-full rounded-2xl shadow-md"
+              style="max-height: 400px; object-fit: cover;"
+            />
           </div>
         </div>
       </div>
@@ -59,14 +62,14 @@
     <!-- Context -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-4">&#128007; Context &amp; Goals</h2>
+        <h2 class="text-4xl font-bold mb-4">🐾 Context &amp; Goals</h2>
         <p class="text-lg text-gray-600 mb-4">
           This was my first project during my digital marketing training. We worked with a fictional case: a new veterinary clinic in southern Amsterdam focused on emotional, multilingual, and fear-free care. The goal was to create a full inbound marketing campaign from scratch to position the clinic among expats and new pet parents — with no existing brand recognition or paid campaigns.
         </p>
         <p class="text-lg text-gray-600 mb-6">
           I wanted to emotionally connect with people who love their pets deeply but feel anxious about how to care for them properly. So I designed an inbound strategy tailored to their needs and emotions, providing useful, kind, and calming content. Everything was built around education, empathy, and long-term trust.
         </p>
-        <div class="bg-yellow-50 rounded-xl p-6 mb-6">
+        <div class="bg-green-50 rounded-xl p-6 mb-6">
           <p class="text-lg text-gray-700 italic">"New here? We're here to guide you."</p>
         </div>
       </div>
@@ -75,7 +78,7 @@
     <!-- Everything is Connected -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#9989; Everything is Connected</h2>
+        <h2 class="text-4xl font-bold mb-6">✅ Everything is Connected</h2>
         <p class="text-lg text-gray-600 mb-4">Each piece of content leads to the next. From blogs to lead magnets, Instagram reels to Typeform quizzes, everything is designed to engage our audience across channels and gently guide them toward booking their first visit.</p>
         <p class="text-lg text-gray-600">This isn't a funnel — it's a <b>network</b>. Its strength lies in the connections.</p>
       </div>
@@ -84,18 +87,15 @@
     <!-- Operational Steps -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128640; Strategy in Action</h2>
-
+        <h2 class="text-4xl font-bold mb-6">🚀 Strategy in Action</h2>
         <div class="mb-8">
           <h3 class="text-xl font-bold mb-4">Market &amp; SEO Research</h3>
           <p class="text-lg text-gray-600">I conducted a full SWOT analysis, explored competitors using SEMrush, Similarweb, and Ubersuggest, and defined realistic positioning for a small local clinic. I then built three buyer personas and a complete inbound strategy for the brand launch.</p>
         </div>
-
         <div class="mb-8">
           <h3 class="text-xl font-bold mb-4">Social Media Plan</h3>
           <p class="text-lg text-gray-600">I designed a 3-month content plan (Excel) for Instagram, TikTok, and Facebook, built around trust signals, pet care tips, emotional storytelling, and clinic highlights. Content was designed in Canva and Gamma, with video content created in VideoAI and InvideoAI.</p>
         </div>
-
         <div class="mb-8">
           <h3 class="text-xl font-bold mb-4">Lead Magnets</h3>
           <p class="text-lg text-gray-600">I created two downloadable, useful, and visually appealing lead magnets: a <b>Mini Lookbook</b> and a <b>Starter Kit Checklist</b> (Notion format). These were shared across blogs and email sequences to provide value and capture leads.</p>
@@ -106,24 +106,21 @@
     <!-- Educational Blogs -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128221; Educational Blogs: Content with Purpose</h2>
+        <h2 class="text-4xl font-bold mb-6">📝 Educational Blogs: Content with Purpose</h2>
         <p class="text-lg text-gray-600 mb-6">Content wasn't just created to exist — it was designed to work. Each blog post served a unique purpose within the inbound funnel, contributing to both SEO visibility and customer trust.</p>
-
-        <div class="mb-8 border-l-4 border-yellow-400 pl-6">
+        <div class="mb-8 border-l-4 border-green-400 pl-6">
           <h3 class="text-xl font-bold mb-2">1. "Do You Need Pet Insurance in the Netherlands?"</h3>
           <p class="text-gray-500 text-sm mb-3 italic">Attraction + Lead Generation + Nurturing</p>
           <p class="text-lg text-gray-600 mb-3">Targeted top-of-the-funnel users searching for pet insurance in the Netherlands. It featured an interactive Typeform quiz — a soft lead-generation tool disguised as helpful content. Upon completion, responses triggered a 4-part Soap Opera-style email sequence in HubSpot, with automatic segmentation by pet type (dog, cat, other).</p>
           <p class="text-lg text-gray-600">This blog was more than just content — it was the entry point into a fully automated nurturing journey.</p>
         </div>
-
-        <div class="mb-8 border-l-4 border-yellow-400 pl-6">
+        <div class="mb-8 border-l-4 border-green-400 pl-6">
           <h3 class="text-xl font-bold mb-2">2. "New Pet Starter Kit: Your Guide to a Happy Pet"</h3>
           <p class="text-gray-500 text-sm mb-3 italic">Education + Trust + Downloadable Lead Magnet</p>
           <p class="text-lg text-gray-600 mb-3">Positioned at the Engage stage, this blog aimed to build trust. With clear advice on vaccines, behaviour, and preparation tips for a first vet visit, it functioned as a friendly guide for nervous first-timers.</p>
           <p class="text-lg text-gray-600">It introduced a Notion-based downloadable checklist, reinforcing our image as a kind, practical clinic. The tone was intentionally soft: <em>"New here? We're here to guide you."</em></p>
         </div>
-
-        <div class="mb-8 border-l-4 border-yellow-400 pl-6">
+        <div class="mb-8 border-l-4 border-green-400 pl-6">
           <h3 class="text-xl font-bold mb-2">3. "First-Time Pet Owner Fails? 🐾 Learn &amp; Avoid!"</h3>
           <p class="text-gray-500 text-sm mb-3 italic">Education + Reusable Content + Instagram Engagement</p>
           <p class="text-lg text-gray-600">This playful, emotionally resonant piece lived at the top of the funnel and doubled as a social media engine. Created as an engaging Gamma slide blog, it was built to become an Instagram Highlight, Story, or Reel series. Each slide tackled a common mistake, and the final one invited users to share their funniest "pet parent fail" stories and tag the clinic — boosting interaction and brand affinity.</p>
@@ -134,29 +131,27 @@
     <!-- Quiz + Email Sequence -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128312; Interactive Quiz + Email Sequence</h2>
+        <h2 class="text-4xl font-bold mb-6"><span style="color:#16a34a;">◆</span> Interactive Quiz + Email Sequence</h2>
         <p class="text-lg text-gray-600 mb-4">I designed an interactive Typeform quiz to help new pet owners decide whether pet insurance made sense for their pet. But this quiz wasn't just a helpful tool — it was the starting point of a relationship.</p>
         <p class="text-lg text-gray-600 mb-4">Once completed, user answers were automatically sent to HubSpot, where contacts were segmented by pet type for tailored follow-up. This triggered a <b>4-part Soap Opera-style email sequence</b>:</p>
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          <div class="bg-yellow-50 rounded-xl p-5">
+          <div class="bg-green-50 rounded-xl p-5">
             <p class="font-bold text-gray-800 mb-2">Email 1</p>
             <p class="text-gray-600">Warm welcome and reassurance — "We're reviewing your answers, and we're here for you."</p>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-5">
+          <div class="bg-green-50 rounded-xl p-5">
             <p class="font-bold text-gray-800 mb-2">Email 2</p>
             <p class="text-gray-600">Emotional storytelling — addressing overwhelm and offering the New Pet Starter Kit as a clear, vet-approved first step.</p>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-5">
+          <div class="bg-green-50 rounded-xl p-5">
             <p class="font-bold text-gray-800 mb-2">Email 3</p>
             <p class="text-gray-600">Brand differentiation — introducing NaturaVet's Fear-Free philosophy, multilingual team, and emotional care.</p>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-5">
+          <div class="bg-green-50 rounded-xl p-5">
             <p class="font-bold text-gray-800 mb-2">Email 4</p>
             <p class="text-gray-600">Gentle urgency — inviting the user to book a first visit, while reinforcing the supportive, no-pressure tone.</p>
           </div>
         </div>
-
         <p class="text-lg text-gray-600">Every email included links to relevant blogs, social channels, and a soft CTA — creating a loop of nurturing content that built trust, value, and emotional safety.</p>
       </div>
     </section>
@@ -164,7 +159,7 @@
     <!-- Influencer Campaign -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128247; Influencer Campaign: Trust Through Shared Stories</h2>
+        <h2 class="text-4xl font-bold mb-6">📸 Influencer Campaign: Trust Through Shared Stories</h2>
         <p class="text-lg text-gray-600 mb-4">In a city full of options, trust doesn't come from ads — it comes from stories. I created a micro-influencer strategy focused on pet parents, foster volunteers, and trainers in Amsterdam and across the Netherlands.</p>
         <p class="text-lg text-gray-600 mb-4">I identified profiles with 2K–15K engaged followers, prioritising authenticity over reach. These influencers would:</p>
         <ul class="mb-6 space-y-3 px-6" style="list-style: disc">
@@ -179,7 +174,7 @@
     <!-- Metrics -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128207; Metrics &amp; Tracking Plan</h2>
+        <h2 class="text-4xl font-bold mb-6">📏 Metrics &amp; Tracking Plan</h2>
         <p class="text-lg text-gray-600 mb-4">I developed a full metrics plan from the ground up, linking each marketing action to tangible, trackable results. KPIs defined across platforms:</p>
         <ul class="mb-6 space-y-3 px-6" style="list-style: disc">
           <li class="text-lg text-gray-600"><b>Instagram:</b> Reach, engagement rate, story and reel views, link clicks to website</li>
@@ -195,32 +190,31 @@
     <!-- Projected Results -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128202; Projected Results</h2>
+        <h2 class="text-4xl font-bold mb-6">📊 Projected Results</h2>
         <p class="text-lg text-gray-600 mb-6">Based on standard benchmarks for small clinics and ethical inbound marketing in Europe, over a 3–4 month period:</p>
-
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">+30%</p>
+          <div class="bg-green-50 rounded-xl p-4 text-center">
+            <p class="text-3xl font-bold text-green-600">+30%</p>
             <p class="text-sm text-gray-600 mt-1">Website traffic from Instagram</p>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">50K+</p>
+          <div class="bg-green-50 rounded-xl p-4 text-center">
+            <p class="text-3xl font-bold text-green-600">50K+</p>
             <p class="text-sm text-gray-600 mt-1">Views on Reels &amp; video content</p>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">+1,500</p>
+          <div class="bg-green-50 rounded-xl p-4 text-center">
+            <p class="text-3xl font-bold text-green-600">+1,500</p>
             <p class="text-sm text-gray-600 mt-1">New Instagram followers</p>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">30–40</p>
+          <div class="bg-green-50 rounded-xl p-4 text-center">
+            <p class="text-3xl font-bold text-green-600">30–40</p>
             <p class="text-sm text-gray-600 mt-1">Typeform leads/month (pet-segmented)</p>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">&gt;40%</p>
+          <div class="bg-green-50 rounded-xl p-4 text-center">
+            <p class="text-3xl font-bold text-green-600">&gt;40%</p>
             <p class="text-sm text-gray-600 mt-1">Email open rate</p>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">15–20</p>
+          <div class="bg-green-50 rounded-xl p-4 text-center">
+            <p class="text-3xl font-bold text-green-600">15–20</p>
             <p class="text-sm text-gray-600 mt-1">New appointment bookings/month</p>
           </div>
         </div>
@@ -230,7 +224,7 @@
     <!-- Key Learnings -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#129504; Key Learnings</h2>
+        <h2 class="text-4xl font-bold mb-6">🧠 Key Learnings</h2>
         <p class="text-lg text-gray-600 mb-4">NaturaVet taught me how to create an inbound campaign with real emotional depth and strategic alignment. I learned to map out each touchpoint — from a quiz to a blog to an email — as part of a connected journey.</p>
         <p class="text-lg text-gray-600 mb-4">Some of my most valuable lessons:</p>
         <ul class="mb-4 space-y-3 px-6" style="list-style: disc">
@@ -245,23 +239,23 @@
     <!-- Tools Used -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128736; Tools Used</h2>
+        <h2 class="text-4xl font-bold mb-6">🛠 Tools Used</h2>
         <div class="flex flex-wrap gap-3">
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">HubSpot</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Canva</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">ChatGPT</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Gamma</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Typeform</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Notion</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Excel</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">InvideoAI</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">VideoAI</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">UXPilot</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">SEMrush</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Ubersuggest</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Similarweb</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">GA4</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Meta Business Suite</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">HubSpot</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Canva</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">ChatGPT</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Gamma</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Typeform</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Notion</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Excel</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">InvideoAI</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">VideoAI</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">UXPilot</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">SEMrush</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Ubersuggest</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Similarweb</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">GA4</span>
+          <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Meta Business Suite</span>
         </div>
       </div>
     </section>
@@ -274,11 +268,13 @@
             <h3 class="text-xl font-bold">Ana Díaz Aláez</h3>
             <p class="text-gray-400">Data-Driven Marketing Professional</p>
           </div>
+          <a href="/#home" class="text-gray-400 text-sm hover:text-white">← Back to projects</a>
         </div>
         <div class="mt-8 pt-6 border-t border-gray-700 text-center text-gray-400">
           <p>© 2025 Ana Díaz Aláez. All rights reserved.</p>
         </div>
       </div>
     </footer>
+
   </body>
 </html>
