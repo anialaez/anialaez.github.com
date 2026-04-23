@@ -215,36 +215,48 @@
           <p class="text-lg text-gray-600 mb-6">Tras el proyecto en equipo, diseñé de forma independiente un sistema de automatización en Make que identificaba automáticamente la persona de cada usuario (Sophie, David, Sara), etiquetaba los leads en el CRM y activaba rutas de email personalizadas. Conecté los formularios de HubSpot con GeminiAI y Outlook a través de Make, generando respuestas automáticas con un tono emocionalmente cercano — escalando la personalización sin perder la conexión.</p>
 
           <!-- Workflow visual -->
-          <div class="rounded-xl border border-blue-100 bg-blue-50 p-6">
-            <p class="text-sm font-semibold text-blue-700 uppercase tracking-wide mb-5 text-center">Flujo de automatización en Make</p>
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-3 items-center">
-              <div class="workflow-step">
+          <div class="rounded-xl border border-blue-200 bg-blue-50 p-6" style="max-width: 720px;">
+            <p class="text-lg font-bold text-blue-800 mb-5 text-center">Flujo de automatización en Make</p>
+
+            <!-- Steps row -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0 mb-5">
+              <!-- Step 1 -->
+              <div class="workflow-step" style="flex:0 0 auto; width:150px;">
                 <div class="text-2xl mb-2">📋</div>
                 <p class="text-sm font-bold text-gray-800 mb-1">HubSpot CRM</p>
                 <p class="text-xs text-gray-500">Formulario FlexFlow enviado → trigger</p>
               </div>
-              <div class="workflow-arrow text-center text-2xl text-blue-400">→</div>
-              <div class="workflow-step">
+              <!-- Arrow -->
+              <div class="text-blue-400 font-bold text-xl flex-shrink-0 mx-2 rotate-90 md:rotate-0">→</div>
+              <!-- Step 2 -->
+              <div class="workflow-step" style="flex:0 0 auto; width:150px;">
                 <div class="text-2xl mb-2">🤖</div>
                 <p class="text-sm font-bold text-gray-800 mb-1">Gemini AI</p>
                 <p class="text-xs text-gray-500">Genera email personalizado con nombre y CTA del trial</p>
               </div>
-              <div class="workflow-arrow text-center text-2xl text-blue-400">→</div>
-              <div class="workflow-step">
+              <!-- Arrow -->
+              <div class="text-blue-400 font-bold text-xl flex-shrink-0 mx-2 rotate-90 md:rotate-0">→</div>
+              <!-- Step 3 -->
+              <div class="workflow-step" style="flex:0 0 auto; width:150px;">
                 <div class="text-2xl mb-2">✉️</div>
                 <p class="text-sm font-bold text-gray-800 mb-1">Outlook</p>
                 <p class="text-xs text-gray-500">Envío automático al lead con tono cálido y personalizado</p>
               </div>
             </div>
-            <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-blue-800">
-              <div class="bg-white rounded-lg p-3 border border-blue-100">
-                <span class="font-semibold">✅ Testado:</span> Formulario enviado en HubSpot, escenario ejecutado en Make, email recibido correctamente.
+
+            <!-- Info tags -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div class="bg-white rounded-lg p-3 border border-blue-100 text-xs text-blue-800">
+                <span class="font-semibold block mb-1">✅ Testado</span>
+                Formulario enviado en HubSpot, escenario ejecutado en Make, email recibido correctamente.
               </div>
-              <div class="bg-white rounded-lg p-3 border border-blue-100">
-                <span class="font-semibold">📧 Ejemplo de asunto:</span> "Welcome to FlexFlow, Ana! ✨ Find Your Flow"
+              <div class="bg-white rounded-lg p-3 border border-blue-100 text-xs text-blue-800">
+                <span class="font-semibold block mb-1">📧 Ejemplo de asunto</span>
+                "Welcome to FlexFlow, Ana! ✨ Find Your Flow"
               </div>
-              <div class="bg-white rounded-lg p-3 border border-blue-100">
-                <span class="font-semibold">📈 Impacto:</span> Respuesta instantánea a leads, personalización escalable, tono consistente sin esfuerzo manual.
+              <div class="bg-white rounded-lg p-3 border border-blue-100 text-xs text-blue-800">
+                <span class="font-semibold block mb-1">📈 Impacto</span>
+                Respuesta instantánea a leads, personalización escalable, tono consistente sin esfuerzo manual.
               </div>
             </div>
           </div>
