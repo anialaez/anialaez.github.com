@@ -3,14 +3,43 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="NaturaVet – Caso de Estudio de Marketing Digital por Ana Díaz Aláez" />
+    <meta name="description" content="NaturaVet – Caso de estudio de marketing digital por Ana Díaz Aláez" />
     <title>Ana Díaz Aláez | NaturaVet</title>
     <script src="../../../index.js" type="module"></script>
     <link rel="stylesheet" href="../../../index.css" />
     <link rel="stylesheet" href="../../../tailwind.css" />
+    <style>
+      .nv-green-50   { background-color: #f0fdf4; }
+      .nv-green-100  { background-color: #dcfce7; }
+      .nv-green-num  { color: #16a34a; }
+      .nv-hero-bg    { background: linear-gradient(to bottom, #ffffff, #f0fdf4); }
+      .nv-border-l   { border-left: 4px solid #4ade80; padding-left: 1.5rem; }
+      .nv-badge      { display: inline-block; background: #dcfce7; color: #15803d; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.75rem; }
+      .nv-img-box    { background: #f9fafb; border-radius: 0.75rem; padding: 0.75rem; margin-top: 1.25rem; }
+      .nv-img-box img { width: 100%; border-radius: 0.5rem; object-fit: contain; display: block; }
+      .nv-stat-grid  { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; }
+      .nv-stat-card  { background: #f0fdf4; border-radius: 0.75rem; padding: 1.25rem; text-align: center; }
+      .nv-stat-card .num   { font-size: 1.875rem; font-weight: 700; color: #16a34a; }
+      .nv-stat-card .label { font-size: 0.8rem; color: #4b5563; margin-top: 0.25rem; }
+      .nv-email-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+      .nv-email-card { background: #f0fdf4; border-radius: 0.75rem; padding: 1.25rem; }
+      .nv-pill       { display: inline-block; padding: 0.5rem 1rem; background: #dcfce7; color: #15803d; border-radius: 9999px; font-size: 0.875rem; font-weight: 500; }
+      .nv-caption    { text-align: center; font-size: 0.78rem; color: #9ca3af; margin-top: 0.5rem; font-style: italic; }
+      .nv-table      { width: 100%; border-collapse: collapse; margin-top: 1.25rem; font-size: 1rem; }
+      .nv-table th   { background: #dcfce7; color: #15803d; padding: 0.75rem 1rem; text-align: left; font-weight: 600; }
+      .nv-table td   { padding: 0.75rem 1rem; border-bottom: 1px solid #f0fdf4; color: #374151; }
+      .nv-table td:last-child { font-weight: 700; color: #16a34a; }
+      .nv-table tr:last-child td { border-bottom: none; }
+      .nv-table tr:nth-child(even) td { background: #f9fafb; }
+      @media (max-width: 640px) {
+        .nv-stat-grid  { grid-template-columns: repeat(2, 1fr); }
+        .nv-email-grid { grid-template-columns: 1fr; }
+      }
+    </style>
   </head>
   <body class="pastel-bg">
-    <!-- Header -->
+
+    <!-- Language toggle -->
     <div class="fixed top-4 right-4 z-50">
       <button id="langToggle" class="bg-white px-3 py-1 rounded-full shadow-md flex items-center space-x-2">
         <span>ES</span>
@@ -19,55 +48,63 @@
         </svg>
       </button>
       <div id="langDropdown" class="hidden absolute right-0 mt-2 bg-white rounded-lg shadow-lg">
-        <a href="/cases/naturavet" aria-label="Switch to English" data-lang="en" class="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-t-lg">English</a>
-        <a href="/es/cases/naturavet" aria-label="Cambiar a español" data-lang="es" class="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-b-lg">Español</a>
+        <a href="/cases/naturavet" data-lang="en" class="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-t-lg">English</a>
+        <a href="/es/cases/naturavet" data-lang="es" class="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded-b-lg">Español</a>
       </div>
     </div>
 
+    <!-- Header -->
     <header class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between">
       <div class="flex items-center mb-4 md:mb-0">
         <div class="w-12 h-12 rounded-full bg-gradient-to-r from-pink-300 to-purple-300 flex items-center justify-center text-white font-bold text-xl">AD</div>
-        <a class="ml-3 text-2xl font-bold" href="/">Ana Díaz Aláez</a>
+        <a class="ml-3 text-2xl font-bold" href="/es/">Ana Díaz Aláez</a>
       </div>
       <nav class="flex space-x-6">
-        <a href="/es#home" aria-label="Ir a Proyectos" class="nav-link">Proyectos</a>
-        <a href="/es#about" aria-label="Ir a Sobre Mí" class="nav-link">Sobre Mí</a>
-        <a href="/es#contact" aria-label="Ir a Contacto" class="nav-link">Contacto</a>
+        <a href="/es/#home" class="nav-link">Proyectos</a>
+        <a href="/es/#about" class="nav-link">Sobre mí</a>
+        <a href="/es/#contact" class="nav-link">Contacto</a>
       </nav>
     </header>
 
     <!-- Hero -->
-    <section class="py-16 bg-gradient-to-b from-white to-yellow-50">
+    <section class="py-16 nv-hero-bg">
       <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2 mb-8 md:mb-0">
-            <h1 class="text-4xl font-bold mb-2">NaturaVet</h1>
-            <h2 class="text-4xl font-bold mb-4 text-gray-400">Caso de Estudio</h2>
-            <p class="text-lg text-gray-600">¿Cómo hacer que una clínica veterinaria conecte emocionalmente desde el primer clic?</p>
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="md:w-1/2 mb-8 md:mb-0" style="padding-right: 2.5rem;">
+            <p class="nv-badge" style="margin-bottom:1rem;">Caso de estudio</p>
+            <h1 class="text-4xl font-bold mb-4">NaturaVet</h1>
+            <p class="text-lg text-gray-600" style="max-width: 420px; line-height: 1.75;">¿Cómo hacer que una clínica veterinaria conecte emocionalmente desde el primer clic?</p>
           </div>
-          <div class="md:w-1/2 flex justify-center">
-            <div class="w-full h-64 pastel-yellow rounded-2xl flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-32 w-32 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-              </svg>
-            </div>
+          <div class="md:w-1/2">
+            <img src="/images/naturavet/naturavet-cover.jpeg" alt="NaturaVet campaign cover"
+              class="w-full rounded-2xl shadow-md" style="max-height: 420px; object-fit: cover;" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- El Proyecto -->
+    <!-- El proyecto -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-4">&#128007; El Proyecto</h2>
-        <p class="text-lg text-gray-600 mb-4">
-          Este fue mi primer proyecto dentro del bootcamp, centrado en diseñar una estrategia inbound para el lanzamiento ficticio de NaturaVet, una nueva clínica veterinaria en el sur de Ámsterdam. La clínica ofrece atención amable, emocional y multilingüe, con un enfoque especial en dueños primerizos y expats cuyas mascotas puedan experimentar miedo o ansiedad.
-        </p>
-        <p class="text-lg text-gray-600 mb-6">
-          El objetivo: construir una marca cercana, generar confianza y atraer nuevos clientes sin campañas pagadas ni reconocimiento previo. Desde el principio, quise construir una experiencia emocionalmente significativa para expats, familias jóvenes o estudiantes que se enfrentan a la incertidumbre del cuidado veterinario en un país nuevo.
-        </p>
-        <div class="bg-yellow-50 rounded-xl p-6 mb-6">
-          <p class="text-lg text-gray-700 italic">"No se trata de convencerles para reservar una cita, sino de acompañar al cliente en su camino como nuevo cuidador."</p>
+        <h2 class="text-4xl font-bold mb-4">El proyecto 🐾</h2>
+        <p class="text-lg text-gray-600 mb-4">Mi primer proyecto dentro del bootcamp: diseñar una estrategia inbound para el lanzamiento ficticio de NaturaVet, una nueva clínica veterinaria en el sur de Ámsterdam. La clínica ofrece atención amable, emocional y multilingüe, con foco especial en dueños primerizos y expats cuyos animales puedan tener miedo o ansiedad.</p>
+        <p class="text-lg text-gray-600 mb-6">El objetivo era construir una marca cercana, generar confianza y atraer nuevos clientes sin campañas de pago ni reconocimiento previo. Desde el principio quise diseñar algo emocionalmente real para personas que se enfrentan al cuidado veterinario en un país nuevo y sin red de apoyo.</p>
+        <div class="nv-green-50 rounded-xl p-6 mb-6">
+          <p class="text-lg text-gray-700 italic">"No se trata de convencerles para que reserven una cita, sino de acompañarles en su camino como nuevos cuidadores."</p>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin-top:1.5rem;">
+          <div class="nv-green-50 rounded-xl p-4 text-center">
+            <p class="text-2xl font-bold nv-green-num">45%</p>
+            <p class="text-sm text-gray-600 mt-1">De los hogares holandeses tiene mascota (2023)</p>
+          </div>
+          <div class="nv-green-50 rounded-xl p-4 text-center">
+            <p class="text-2xl font-bold nv-green-num">65K</p>
+            <p class="text-sm text-gray-600 mt-1">Residentes en los barrios objetivo</p>
+          </div>
+          <div class="nv-green-50 rounded-xl p-4 text-center">
+            <p class="text-2xl font-bold nv-green-num">44%</p>
+            <p class="text-sm text-gray-600 mt-1">Son "nuevos urbanitas" de entre 18 y 55 años</p>
+          </div>
         </div>
       </div>
     </section>
@@ -75,168 +112,229 @@
     <!-- Todo está conectado -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#9989; Todo está conectado</h2>
-        <p class="text-lg text-gray-600 mb-4">Desde el inicio, diseñé la campaña con una visión holística y transversal: cada canal, cada contenido, cada llamada a la acción está cuidadosamente conectado con el resto.</p>
-        <ul class="mb-4 space-y-3 px-6" style="list-style: disc">
-          <li class="text-lg text-gray-600">Los blogs no solo posicionan en Google — también enlazan a otros contenidos, incluyen lead magnets y se adaptan para Instagram Stories, Reels o Highlights.</li>
-          <li class="text-lg text-gray-600">El quiz de Typeform capta leads y activa una secuencia automatizada de emails en HubSpot que guía al usuario de forma personalizada.</li>
-          <li class="text-lg text-gray-600">Las secuencias de email llevan al lector desde el descubrimiento hasta la reserva, presentando los valores de la clínica y contenido relevante.</li>
-          <li class="text-lg text-gray-600">Los microinfluencers no solo generan alcance — también enlazan con el resto del ecosistema: blogs, redes, quiz.</li>
-        </ul>
-        <p class="text-lg text-gray-600">Es una <b>red</b>, no un embudo. Y su fuerza está en las conexiones.</p>
+        <h2 class="text-4xl font-bold mb-6">Todo está conectado ✅</h2>
+        <p class="text-lg text-gray-600 mb-4">Diseñé la campaña para que cada canal, cada contenido y cada llamada a la acción tuviera sentido dentro del conjunto.</p>
+        <p class="text-lg text-gray-600 mb-4">Los blogs posicionan en Google, pero también enlazan a otros contenidos, incluyen lead magnets y se adaptan para Instagram Stories, Reels o Highlights. El quiz de Typeform capta leads y activa una secuencia automatizada de emails en HubSpot que guía al usuario de forma personalizada. Las secuencias de email llevan al lector desde el descubrimiento hasta la reserva. Los microinfluencers no solo generan alcance: enlazan con el resto del ecosistema, blogs, redes y quiz.</p>
+        <p class="text-lg text-gray-600">Es una red, no un embudo. Y su fuerza está en las conexiones.</p>
+      </div>
+    </section>
+
+    <!-- Para quién lo diseñé -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-4">¿Para quién lo diseñé? 👥</h2>
+        <p class="text-lg text-gray-600 mb-4">Dos buyer personas principales, construidas a partir de datos demográficos reales de los barrios del sur de Ámsterdam.</p>
+        <div class="nv-img-box" style="max-width:700px;">
+          <img src="/images/naturavet/slide-03.jpg" alt="Buyer personas" style="max-height:380px; background:#fafafa;" />
+          <p class="nv-caption">Dos buyer personas basadas en investigación demográfica de los barrios de Ámsterdam Sur</p>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2rem;">
+          <div class="nv-green-50 rounded-xl p-5">
+            <p class="font-bold text-gray-800 mb-2">Millennials con mascota · 25–40 años</p>
+            <p class="text-gray-600 text-sm">Muy activos digitalmente, valoran la flexibilidad y el trato amable. Se alcanzan mejor por Instagram, WhatsApp y newsletters.</p>
+          </div>
+          <div class="nv-green-50 rounded-xl p-5">
+            <p class="font-bold text-gray-800 mb-2">Dueños primerizos · 23–35 años</p>
+            <p class="text-gray-600 text-sm">A menudo expats o parejas jóvenes, nuevos en Ámsterdam y en el cuidado de animales. Necesitan orientación clara y tranquilidad. Se alcanzan mejor con checklists, blogs y Reels educativos.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Puesta en marcha -->
-    <section class="py-16">
+    <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128640; Puesta en marcha</h2>
-
-        <div class="mb-8">
-          <h3 class="text-xl font-bold mb-4">Investigación de mercado y SEO</h3>
-          <p class="text-lg text-gray-600">Realicé un análisis DAFO completo, investigué a los competidores usando SEMrush, Similarweb y Ubersuggest, y definí un posicionamiento realista para una clínica pequeña y local. Luego desarrollé tres buyer personas y una estrategia inbound completa para el lanzamiento de la marca.</p>
+        <h2 class="text-4xl font-bold mb-6">Puesta en marcha 🚀</h2>
+        <div class="mb-10">
+          <h3 class="text-xl font-bold mb-3">Investigación de mercado y SEO</h3>
+          <p class="text-lg text-gray-600">Hice un análisis DAFO completo, investigué a los competidores usando SEMrush, Similarweb y Ubersuggest, y definí un posicionamiento realista para una clínica pequeña y local. A partir de ahí desarrollé dos buyer personas y una estrategia inbound completa para el lanzamiento.</p>
         </div>
-
-        <div class="mb-8">
-          <h3 class="text-xl font-bold mb-4">Plan de redes sociales</h3>
-          <p class="text-lg text-gray-600">Diseñé un plan de contenido de 3 meses (Excel) para Instagram, TikTok y Facebook, basado en señales de confianza, consejos de cuidado, storytelling emocional y presentación del equipo. El contenido visual se diseñó en Canva y Gamma, y los vídeos se crearon con VideoAI e InvideoAI.</p>
+        <div class="mb-10">
+          <h3 class="text-xl font-bold mb-3">Plan de redes sociales</h3>
+          <p class="text-lg text-gray-600 mb-4">Un plan de contenido de 2 meses para Instagram, TikTok y Facebook, basado en señales de confianza, consejos de cuidado, storytelling emocional y presentación del equipo. El contenido visual se diseñó en Canva y Gamma, y los vídeos con InvideoAI.</p>
+          <div class="nv-img-box">
+            <img src="/images/naturavet/slide-05.jpg" alt="Calendario de contenidos NaturaVet — Abril 2025" style="max-height:460px; background:#fafafa;" />
+            <p class="nv-caption">Calendario de contenidos abril 2025 — distribuido en IG, TikTok, Facebook y Email</p>
+          </div>
         </div>
-
-        <div class="mb-8">
-          <h3 class="text-xl font-bold mb-4">Lead magnets</h3>
-          <p class="text-lg text-gray-600">Creé dos lead magnets descargables, útiles y visualmente atractivos: un <b>Mini Lookbook</b> y un <b>Starter Kit Checklist</b> (formato Notion). Se distribuyeron a través de blogs y secuencias de email para aportar valor y capturar leads.</p>
+        <div>
+          <h3 class="text-xl font-bold mb-3">Lead magnets</h3>
+          <p class="text-lg text-gray-600">Dos recursos descargables útiles y bien diseñados: un <strong>Mini Lookbook</strong> y un <strong>Starter Kit Checklist</strong> en formato Notion. Se distribuyeron a través de blogs y emails para aportar valor antes de pedir cualquier cosa a cambio.</p>
         </div>
       </div>
     </section>
 
     <!-- Blogs educativos -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128221; Blogs educativos</h2>
-        <p class="text-lg text-gray-600 mb-6">Quería que los contenidos del blog no fueran solo informativos, sino herramientas vivas dentro de la estrategia inbound. Diseñé tres blogs con objetivos diferentes y complementarios.</p>
-
-        <div class="mb-8 border-l-4 border-yellow-400 pl-6">
-          <h3 class="text-xl font-bold mb-2">1. "Do you need pet insurance in the Netherlands?"</h3>
-          <p class="text-gray-500 text-sm mb-3 italic">Atracción + generación de leads + nurturing</p>
-          <p class="text-lg text-gray-600">Este fue mi blog gancho. Diseñé un artículo informativo y accesible que guiaba al lector a realizar un test interactivo en Typeform. Al completarlo, sus datos se conectaban a HubSpot, se segmentaban por tipo de mascota y activaban una secuencia de 4 emails tipo Soap Opera con información útil y CTAs suaves pero efectivos.</p>
-        </div>
-
-        <div class="mb-8 border-l-4 border-yellow-400 pl-6">
-          <h3 class="text-xl font-bold mb-2">2. "New Pet Starter Kit: Your Guide to a Happy Pet"</h3>
-          <p class="text-gray-500 text-sm mb-3 italic">Educación + confianza + lead magnet descargable</p>
-          <p class="text-lg text-gray-600">Este blog está pensado para quienes ya sienten afinidad con la clínica y quieren saber si pueden confiar en ella. Habla de vacunas, comportamiento y qué llevar a la primera visita, con un tono tranquilizador. Al final se ofrece un checklist interactivo en Notion como lead magnet.</p>
-        </div>
-
-        <div class="mb-8 border-l-4 border-yellow-400 pl-6">
-          <h3 class="text-xl font-bold mb-2">3. "First-Time Pet Owner Fails? 🐾 Learn &amp; Avoid!"</h3>
-          <p class="text-gray-500 text-sm mb-3 italic">Educación + contenido reutilizable + interacción en Instagram</p>
-          <p class="text-lg text-gray-600">Un blog ligero y emocional estructurado como guía de errores comunes, ilustrada con slides que pueden usarse como Reels, Stories o Highlights de Instagram. La última slide invita a los usuarios a compartir sus propias historias y etiquetar a la clínica — generando conversación y viralidad orgánica.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quiz y secuencia de emails -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128312; Quiz interactivo + secuencia de emails</h2>
-        <p class="text-lg text-gray-600 mb-4">Diseñé un test interactivo en Typeform para ayudar a los dueños a elegir el mejor seguro para su mascota. Al completarlo, los datos se conectaban automáticamente con HubSpot, donde se segmentaban por tipo de mascota. Esta acción activaba una <b>secuencia de 4 emails automatizados estilo Soap Opera</b>:</p>
+        <h2 class="text-4xl font-bold mb-4">Blogs educativos 📝</h2>
+        <p class="text-lg text-gray-600 mb-8">Quería que los blogs no fueran solo informativos, sino herramientas activas dentro de la estrategia. Diseñé tres, cada uno con un objetivo diferente dentro del funnel.</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          <div class="bg-yellow-50 rounded-xl p-5">
-            <p class="font-bold text-gray-800 mb-2">Email 1</p>
-            <p class="text-gray-600">Bienvenida cálida y tranquilizadora — "Estamos revisando tus respuestas y estamos aquí para ti."</p>
+        <div class="mb-10 nv-border-l">
+          <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
+            <div style="flex:1; min-width:260px;">
+              <span class="nv-badge">TOFU — Atracción + interacción</span>
+              <h3 class="text-xl font-bold mb-2">"First-Time Pet Owner Fails? 🐾 Learn &amp; Avoid!"</h3>
+              <p class="text-lg text-gray-600">Un blog ligero y emocional estructurado como guía de errores comunes, con slides reutilizables como Reels, Stories o Highlights de Instagram. La última slide invita a los usuarios a compartir sus propias historias y etiquetar a la clínica, generando conversación orgánica.</p>
+            </div>
+            <div style="flex:1; min-width:260px;">
+              <div class="nv-img-box">
+                <img src="/images/naturavet/blog-pet-fails-p1.jpg" alt="Blog First-Time Pet Owner Fails" style="max-height:480px; width:100%; object-fit:contain; background:#fafafa;" />
+                <p class="nv-caption">Blog en Gamma — diseñado para funcionar como contenido SEO y reutilizable en Instagram simultáneamente</p>
+              </div>
+            </div>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-5">
-            <p class="font-bold text-gray-800 mb-2">Email 2</p>
-            <p class="text-gray-600">Storytelling emocional — abordando la incertidumbre y ofreciendo el Starter Kit como primer paso claro y validado.</p>
+        </div>
+
+        <div class="mb-10 nv-border-l">
+          <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
+            <div style="flex:1; min-width:260px;">
+              <span class="nv-badge">MOFU — Educación + confianza</span>
+              <h3 class="text-xl font-bold mb-2">"New Pet Starter Kit: Your Guide to a Happy Pet"</h3>
+              <p class="text-lg text-gray-600">Para quienes ya tienen afinidad con la clínica y quieren saber si pueden confiar en ella. Habla de vacunas, comportamiento y qué llevar a la primera visita, con un tono tranquilizador. Al final se ofrece el checklist en Notion como lead magnet. Tono: <em>"¿Eres nuevo aquí? Estamos para guiarte."</em></p>
+            </div>
+            <div style="flex:1; min-width:260px;">
+              <div class="nv-img-box">
+                <img src="/images/naturavet/blog-starter-kit-p1.jpg" alt="New Pet Starter Kit landing page" style="max-height:480px; width:100%; object-fit:contain; background:#fafafa;" />
+                <p class="nv-caption">Landing page en Gamma — Calendario de Vacunación Holandés + checklist descargable en Notion</p>
+              </div>
+            </div>
           </div>
-          <div class="bg-yellow-50 rounded-xl p-5">
-            <p class="font-bold text-gray-800 mb-2">Email 3</p>
-            <p class="text-gray-600">Diferenciación de marca — presentando la filosofía Fear-Free de NaturaVet, equipo multilingüe y atención emocional.</p>
-          </div>
-          <div class="bg-yellow-50 rounded-xl p-5">
-            <p class="font-bold text-gray-800 mb-2">Email 4</p>
-            <p class="text-gray-600">Urgencia suave — invitando al usuario a reservar su primera visita, manteniendo el tono de apoyo sin presión.</p>
+        </div>
+
+        <div class="nv-border-l">
+          <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
+            <div style="flex:1; min-width:260px;">
+              <span class="nv-badge">MOFU — Generación de leads</span>
+              <h3 class="text-xl font-bold mb-2">"Do You Need Pet Insurance in the Netherlands?"</h3>
+              <p class="text-lg text-gray-600">El blog gancho. Un artículo informativo y accesible que llevaba al lector a completar un test interactivo en Typeform. Al terminarlo, sus datos pasaban a HubSpot, se segmentaban por tipo de mascota y activaban una secuencia de 4 emails con información útil y CTAs suaves pero efectivos.</p>
+            </div>
+            <div style="flex:1; min-width:260px;">
+              <div class="nv-img-box">
+                <img src="/images/naturavet/blog-insurance-p1.jpg" alt="Landing page seguro de mascotas" style="max-height:480px; width:100%; object-fit:contain; background:#fafafa;" />
+                <p class="nv-caption">Landing page + quiz de Typeform integrado — punto de entrada al recorrido de nurturing completo</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Microinfluencers -->
+    <!-- Quiz + email automation -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128247; Campaña con microinfluencers</h2>
-        <p class="text-lg text-gray-600 mb-4">Quería amplificar el mensaje desde voces reales, cercanas y confiables. Desarrollé un plan de influencer marketing enfocado en microinfluencers (2K–15K seguidores) con mascotas, especialmente activos en adopción o voluntariado.</p>
-        <p class="text-lg text-gray-600 mb-4">Las colaboraciones eran auténticas: compartirían su experiencia con la clínica a través de stories, Reels o posts sobre cuidado responsable, promoviendo también nuestros recursos gratuitos: blogs, quiz y Starter Kit.</p>
-        <p class="text-lg text-gray-600">Esta acción no solo aumentaría visibilidad y credibilidad, sino que integraba el contenido de redes sociales con el resto del ecosistema inbound.</p>
+        <h2 class="text-4xl font-bold mb-6">Quiz interactivo + secuencia de emails <span style="color:#16a34a;">◆</span></h2>
+        <p class="text-lg text-gray-600 mb-4">Diseñé un test en Typeform para ayudar a los dueños a elegir el mejor seguro para su mascota. Al completarlo, los datos llegaban automáticamente a HubSpot, donde se segmentaban por tipo de mascota y activaban una secuencia de 4 emails automatizados.</p>
+        <div class="nv-img-box mb-8">
+          <img src="/images/naturavet/slide-06.jpg" alt="Landing page + quiz Typeform conectado a HubSpot" style="max-height:440px; background:#fafafa;" />
+          <p class="nv-caption">Funnel completo: landing page Gamma → quiz Typeform → segmentación HubSpot → secuencia de emails</p>
+        </div>
+        <div class="nv-email-grid">
+          <div class="nv-email-card">
+            <p class="font-bold text-gray-800 mb-2">Email 1 — Bienvenida</p>
+            <p class="text-gray-600 text-sm">Cálida y sin presión. "Estamos revisando tus respuestas y estamos aquí para ti."</p>
+          </div>
+          <div class="nv-email-card">
+            <p class="font-bold text-gray-800 mb-2">Email 2 — Empatía</p>
+            <p class="text-gray-600 text-sm">Aborda la incertidumbre y ofrece el Starter Kit como primer paso claro.</p>
+          </div>
+          <div class="nv-email-card">
+            <p class="font-bold text-gray-800 mb-2">Email 3 — Diferenciación</p>
+            <p class="text-gray-600 text-sm">Presenta la filosofía Fear-Free de NaturaVet, el equipo multilingüe y el enfoque emocional.</p>
+          </div>
+          <div class="nv-email-card">
+            <p class="font-bold text-gray-800 mb-2">Email 4 — CTA suave</p>
+            <p class="text-gray-600 text-sm">Invitación a reservar la primera visita, sin presión, con enlace a reserva y WhatsApp.</p>
+          </div>
+        </div>
+        <div class="nv-img-box">
+          <img src="/images/naturavet/slide-07.jpg" alt="Workflow de email en HubSpot" style="max-height:440px; background:#fafafa;" />
+          <p class="nv-caption">Workflow en HubSpot — secuencia de 4 emails con delays, ramas y segmentación por tipo de mascota</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Del blog a Instagram -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-4">Del blog a Instagram 📱</h2>
+        <p class="text-lg text-gray-600 mb-4">El contenido nunca vivía en silos. Cada blog estaba diseñado para existir también como Highlight, serie de Stories o Reel en Instagram. El blog "First-Time Pet Owner Fails", por ejemplo, se estructuró específicamente para reutilizarse como motor de contenido social — el CTA llevaba directamente al perfil de Instagram de NaturaVet.</p>
+        <div class="nv-img-box">
+          <img src="/images/naturavet/slide-08.jpg" alt="Contenido del blog reutilizado como mockup de Instagram" style="max-height:460px; background:#fafafa;" />
+          <p class="nv-caption">CTA del blog conectado directamente al mockup del perfil de Instagram de NaturaVet — diseñado en UXPilot</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campaña con microinfluencers -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-6">Campaña con microinfluencers 📷</h2>
+        <p class="text-lg text-gray-600 mb-4">Desarrollé un plan de influencer marketing con microinfluencers de entre 2K y 15K seguidores, especialmente activos en adopción o voluntariado con animales. La autenticidad era el criterio principal, no el alcance.</p>
+        <p class="text-lg text-gray-600 mb-3">Las colaboraciones consistían en:</p>
+        <ul class="space-y-2 px-6" style="list-style:disc">
+          <li class="text-lg text-gray-600">Compartir su experiencia con la clínica a través de stories, Reels o posts sobre cuidado responsable</li>
+          <li class="text-lg text-gray-600">Promocionar los recursos gratuitos: blogs, quiz y Starter Kit</li>
+          <li class="text-lg text-gray-600">Invitar a sus seguidores a compartir sus propios "errores de dueño primerizo", generando UGC y alcance orgánico</li>
+        </ul>
       </div>
     </section>
 
     <!-- Resultados esperados -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128202; Resultados esperados</h2>
-        <p class="text-lg text-gray-600 mb-6">Si esta estrategia se implementara en un contexto real, durante un período de 3 a 4 meses:</p>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">+30%</p>
-            <p class="text-sm text-gray-600 mt-1">Tráfico web desde Instagram</p>
-          </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">50K+</p>
-            <p class="text-sm text-gray-600 mt-1">Visualizaciones en Reels</p>
-          </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">+1.500</p>
-            <p class="text-sm text-gray-600 mt-1">Nuevos seguidores en Instagram</p>
-          </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">30–40</p>
-            <p class="text-sm text-gray-600 mt-1">Leads mensuales vía Typeform</p>
-          </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">&gt;40%</p>
-            <p class="text-sm text-gray-600 mt-1">Tasa de apertura de emails</p>
-          </div>
-          <div class="bg-yellow-50 rounded-xl p-4 text-center">
-            <p class="text-3xl font-bold text-yellow-600">15–20</p>
-            <p class="text-sm text-gray-600 mt-1">Citas reservadas al mes</p>
-          </div>
-        </div>
+        <h2 class="text-4xl font-bold mb-4">Resultados esperados 📊</h2>
+        <p class="text-lg text-gray-600 mb-2">Proyección para un período de 3 a 4 meses en un contexto real, basada en benchmarks del sector salud/bienestar en Europa:</p>
+        <table class="nv-table">
+          <thead>
+            <tr>
+              <th>Métrica</th>
+              <th>Objetivo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tráfico web desde Instagram</td><td>+30%</td></tr>
+            <tr><td>Visualizaciones en Reels</td><td>50K+</td></tr>
+            <tr><td>Nuevos seguidores en Instagram</td><td>+1.500</td></tr>
+            <tr><td>Leads mensuales vía Typeform</td><td>30–40</td></tr>
+            <tr><td>Tasa de apertura de emails</td><td>&gt;40%</td></tr>
+            <tr><td>Citas reservadas al mes</td><td>15–20</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <!-- Aprendizajes -->
+    <!-- Aprendizajes clave -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#129504; Aprendizajes clave</h2>
-        <p class="text-lg text-gray-600 mb-4">NaturaVet me permitió construir una estrategia completa de inbound marketing desde cero, utilizando únicamente métodos orgánicos y una propuesta de valor clara y emocional.</p>
-        <p class="text-lg text-gray-600 mb-4">Aprendí a crear contenido que informa y genera confianza, guiando al usuario hacia la acción de manera sutil pero efectiva. Desarrollé habilidades para diseñar secuencias de emails, blogs, lead magnets y materiales visuales con una voz coherente.</p>
-        <p class="text-lg text-gray-600">Uno de los aprendizajes más importantes fue alinear y conectar cada elemento creativo de forma natural, estructurada y emocionalmente relevante — una mentalidad de arquitecta de campañas: alguien capaz de construir experiencias de marca coherentes, humanas y con impacto.</p>
+        <h2 class="text-4xl font-bold mb-6">Aprendizajes clave 🧠</h2>
+        <p class="text-lg text-gray-600 mb-4">NaturaVet me enseñó a construir una estrategia inbound completa desde cero usando solo métodos orgánicos y una propuesta de valor clara.</p>
+        <p class="text-lg text-gray-600 mb-4">Aprendí a crear contenido que informa y genera confianza al mismo tiempo, guiando al usuario hacia la acción sin forzarlo. También a diseñar secuencias de emails, blogs y lead magnets con una voz coherente de principio a fin.</p>
+        <p class="text-lg text-gray-600">Pero lo más importante fue esto: entender que cada pieza de contenido tiene que tener un trabajo concreto dentro del sistema. Cuando eso funciona, no necesitas presupuesto para que la estrategia avance sola.</p>
       </div>
     </section>
 
-    <!-- Herramientas -->
+    <!-- Herramientas utilizadas -->
     <section class="py-16">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6">&#128736; Herramientas utilizadas</h2>
+        <h2 class="text-4xl font-bold mb-6">Herramientas utilizadas 🛠</h2>
         <div class="flex flex-wrap gap-3">
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">HubSpot</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Canva</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">ChatGPT</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Gamma</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Typeform</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Notion</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Excel</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">InvideoAI</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">VideoAI</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">UXPilot</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">SEMrush</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Ubersuggest</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Similarweb</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">GA4</span>
-          <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Meta Business Suite</span>
+          <span class="nv-pill">HubSpot</span>
+          <span class="nv-pill">Typeform</span>
+          <span class="nv-pill">Gamma</span>
+          <span class="nv-pill">Canva</span>
+          <span class="nv-pill">Notion</span>
+          <span class="nv-pill">SEMrush</span>
+          <span class="nv-pill">Ubersuggest</span>
+          <span class="nv-pill">Similarweb</span>
+          <span class="nv-pill">GA4</span>
+          <span class="nv-pill">Meta Business Suite</span>
+          <span class="nv-pill">Metricool</span>
+          <span class="nv-pill">Hotjar</span>
+          <span class="nv-pill">UXPilot</span>
+          <span class="nv-pill">InvideoAI</span>
+          <span class="nv-pill">ChatGPT</span>
+          <span class="nv-pill">Excel</span>
         </div>
       </div>
     </section>
@@ -247,13 +345,15 @@
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="mb-4 md:mb-0">
             <h3 class="text-xl font-bold">Ana Díaz Aláez</h3>
-            <p class="text-gray-400">Profesional de Marketing Basado en Datos</p>
+            <p class="text-gray-400">Profesional de marketing digital</p>
           </div>
+          <a href="/es/#home" class="text-gray-400 text-sm hover:text-white">← Volver a proyectos</a>
         </div>
         <div class="mt-8 pt-6 border-t border-gray-700 text-center text-gray-400">
           <p>© 2025 Ana Díaz Aláez. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
+
   </body>
 </html>
